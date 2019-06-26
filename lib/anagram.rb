@@ -8,8 +8,8 @@ class Anagram
   end
 
   def match(word_array)
-    word_array.sleect do |word|
-      word.split("").sort == @word.split("").sort
+    word_array.select do |given_word|
+      given_word.split("").sort == @word.split("").sort
   end
 
 
